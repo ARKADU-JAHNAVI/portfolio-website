@@ -1,0 +1,981 @@
+/* General Styles */
+body {
+    margin: 0;
+    font-family: Calibri, sans-serif;
+    color: #fff;
+    /* Change text color to white for better contrast */
+    background-color: #000;
+    /* Overall background set to black */
+    line-height: 1.6;
+    overflow-x: hidden;
+    
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Navbar */
+.navbar {
+    background-color: #b30059;
+    /* Darker pink */
+    color: #fff;
+    padding: 1rem 0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.navbar .logo {
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+.navbar .nav-links {
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    gap: 1rem;
+}
+
+.navbar .nav-links a {
+    color: #fff;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    transition: background-color 0.3s;
+}
+
+.navbar .nav-links a:hover {
+    background-color: #99004d;
+    /* Darker shade of pink */
+    border-radius: 5px;
+}
+
+/* Hero Section */
+.hero {
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('hero-bg.jpg') center/cover no-repeat;
+    color: #fff;
+    text-align: center;
+    padding: 100px 20px;
+    animation: fadeIn 2s ease-in-out;
+}
+
+.hero h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.hero p {
+    font-size: 1.25rem;
+    margin-bottom: 1.5rem;
+}
+
+.hero .btn {
+    background-color: #b30059;
+    /* Darker pink */
+    color: #fff;
+    padding: 0.75rem 1.5rem;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.hero .btn:hover {
+    background-color: #99004d;
+    /* Darker pink */
+    transform: translateY(-3px);
+}
+
+/* Education Section */
+.education {
+    background-color: #000000;
+    /* Black background */
+    padding: 50px 20px;
+    text-align: center;
+    animation: fadeIn 2s ease-in-out;
+    background-image: url("https://www.transparenttextures.com/patterns/dark-wood.png");
+    /*background: url('icon.jpg') center/cover no-repeat;*/
+}
+
+.education h2 {
+    font-size: 2.5rem;
+    color: #fff;
+    /* White color */
+    font-weight: 600;
+    margin-bottom: 1.5rem;
+    justify-content: center;
+}
+
+.education ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.education ul li {
+    font-size: 1.2rem;
+    line-height: 1.8;
+    margin-bottom: 20px;
+    color: #ddd;
+    /* Light grey text */
+    font-weight: 400;
+}
+
+.education ul li strong {
+    font-weight: 600;
+    color: #b30059;
+    /* Darker pink for degree */
+}
+.education-container {
+    display: flex;
+    flex-wrap: wrap;
+    /* Allow wrapping on smaller screens */
+    align-items: flex-start;
+    /* Align items to the top */
+    justify-content: space-between;
+    /* Space between the content and image */
+    gap: 20px;
+    /* Add space between items */
+    max-width: 1200px;
+    margin: 0 auto;
+    /* Center the container */
+    padding: 20px;
+}
+
+.education-details {
+    flex: 3;
+    /* Give more space to the text content */
+    min-width: 300px;
+    /* Minimum width for text section */
+}
+
+.education-image {
+    flex: 1;
+    /* Allocate smaller space to the image */
+    min-width: 150px;
+    /* Minimum width for the image */
+    max-width: 200px;
+    /* Restrict maximum width for better layout */
+    text-align: right;
+    /* Align image to the right */
+}
+
+.education-image img {
+    width: 100%;
+    /* Make image responsive */
+    height: auto;
+    /* Maintain aspect ratio */
+    border-radius: 12px;
+    /* Add rounded corners */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    /* Subtle shadow for a professional look */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .education-container {
+        flex-direction: column;
+        /* Stack items vertically */
+        align-items: center;
+        /* Center items on smaller screens */
+    }
+
+    .education-image {
+        margin-top: 20px;
+        /* Add spacing between content and image */
+        text-align: center;
+        /* Center the image on smaller screens */
+    }
+}
+/* Projects Section */
+.projects {
+    background-color: rgba(216, 112, 147, 0.893);
+    background-image: url("https://www.transparenttextures.com/patterns/foggy-birds.png");
+    padding: 80px 80px;
+    color: #fff;
+    text-align: center;
+}
+
+/* Projects Title */
+.projects h2 {
+    text-align: center;
+    margin-bottom: 3rem;
+    font-size: 2rem;
+    color: #fff;
+    font-weight: 700;
+    text-transform: capitalize;
+}
+
+/* Project Cards Container */
+.project-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    /* 3 columns */
+    gap: 16px;
+    /* Space between cards */
+    margin: 0 auto;
+    max-width: 2000px;
+    /* Optional: Center-align container */
+}
+
+/* Individual Project Card */
+.project-card {
+    background-color: #333;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: all 0.3s ease-in-out;
+    text-align: center;
+    padding: 5px 10px;
+    margin: 0 auto;
+    border: 2px solid #444;
+    animation: fadeInUp 0.6s ease-in-out forwards;
+}
+
+/* Animation for each project box */
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Project Title */
+.project-card h3 {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+    color: #b30059;
+    font-weight: 600;
+}
+
+/* Project Description */
+.project-card p {
+    font-size: 1.1rem;
+    color: #ddd;
+    line-height: 1.5;
+    margin-bottom: 1.5rem;
+    font-weight: 200;
+}
+
+/* Buttons */
+.project-card .btn {
+    text-decoration: none;
+    background-color: #b30059;
+    color: #fff;
+    padding: 12px 20px;
+    border-radius: 5px;
+    font-size: 1rem;
+    display: inline-block;
+    margin: 5px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.project-card .btn:hover {
+    background-color: #99004d;
+    transform: scale(1.05);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .project-grid {
+        grid-template-columns: repeat(2, 1fr);
+        /* 2 columns */
+        gap: 16px;
+    }
+
+    .projects h2 {
+        font-size: 2.5rem;
+    }
+
+    .project-card h3 {
+        font-size: 1.6rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .project-grid {
+        grid-template-columns: 1fr;
+        /* 1 column */
+        gap: 16px;
+    }
+
+    .projects h2 {
+        font-size: 2rem;
+    }
+
+    .project-card h3 {
+        font-size: 1.4rem;
+    }
+
+    .project-card p {
+        font-size: 1rem;
+    }
+
+    .project-card .btn {
+        font-size: 0.9rem;
+        padding: 10px 15px;
+    }
+}
+
+
+/* Skills Section */
+.skills {
+    padding: 50px 20px;
+    background-color: #000;
+    /* Background color */
+    background-repeat: repeat;
+    display: flex;
+    /* Flexbox to place items side by side */
+    align-items: center;
+    justify-content: flex-start;
+    /* Align items to the left */
+    width: 100%;
+}
+
+.skills-container {
+    max-width: 450px;
+    margin: 0 auto;
+    text-align: left;
+    /* Align content to the left */
+}
+
+.skills-heading {
+    text-align: center;
+    /* Center the heading */
+    font-size: 2rem;
+    margin-bottom: 30px;
+    opacity: 0;
+    animation: fadeIn 1s forwards;
+    animation-delay: 0.5s;
+}
+
+/* Skill Bar */
+.skill-bar {
+    margin: 20px 0;
+    background: #222;
+    border-radius: 10px;
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+    transform: scaleX(0);
+    transform-origin: left center;
+    animation: scaleIn 1s forwards;
+    font-style: italic;
+}
+
+/* Skill Title */
+.skill-title {
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #fff;
+    position: absolute;
+    width: 100%;
+    /* Make the title span the full width of the bar */
+    text-align: center;
+    /* Center the title horizontally */
+    top: -25px;
+    /* Position the title above the bar */
+    opacity: 0;
+    animation: fadeIn 1s forwards;
+    animation-delay: 0.5s;
+    font-style: italic;
+}
+
+/* Skill Progress Bar */
+.skill-progress {
+    background: linear-gradient(to right, #b30059, #ff66cc);
+    height: 30px;
+    width: 0;
+    /* Start at 0, animate to the defined width */
+    transition: width 2s ease-in-out;
+    display: flex;
+    align-items: center;
+    padding-left: 10px;
+    /* Add space for text inside */
+    color: #fff;
+    font-weight: bold;
+    opacity: 0;
+    animation: fadeIn 1s forwards;
+    animation-delay: 1s;
+}
+
+/* Technical Skills Image */
+.technical-skills-image {
+    width: 50%;
+    /* Adjust width of the image container */
+    padding-left: 20px;
+    /* Optional: add some padding */
+    opacity: 0;
+    animation: slideInRight 1s forwards;
+    animation-delay: 1s;
+}
+
+.technical-skills-image img {
+    width: 80%;
+    /* Make the image fill the container */
+    max-width: 350px;
+    /* Limit the image width */
+    height: auto;
+    /* Maintain aspect ratio */
+    border-radius: 10px;
+    /* Optional: rounded corners */
+}
+
+/* Animations */
+
+/* Fade-in effect for headings and titles */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+/* Scale-in effect for skill bars */
+@keyframes scaleIn {
+    0% {
+        transform: scaleX(0);
+    }
+
+    100% {
+        transform: scaleX(1);
+    }
+}
+
+/* Slide-in effect for the image */
+@keyframes slideInRight {
+    0% {
+        transform: translateX(50%);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+
+
+
+
+/* About Section */
+.about {
+    background: linear-gradient(to right, rgba(216, 112, 147, 0.9), rgba(255, 105, 180, 0.8));
+    /* Gradient background with a pink to light pink effect */
+    padding: 50px 20px;
+    text-align: center;
+    animation: fadeIn 2s ease-in-out;
+}
+
+.about h2 {
+    margin-bottom: 1.5rem;
+    font-size: 2.0rem;
+    color: #fff;
+    /* White text */
+    font-weight: 700;
+}
+
+/* About Me Paragraph */
+#about p {
+    font-size: 1.2rem;
+    /* Slightly smaller font size for better readability */
+    line-height: 1.8;
+    color: #000;
+    /* Darker text color for better contrast */
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+    font-style: italic;
+    font-weight: 400;
+    /* Regular weight for a more professional feel */
+    padding: 0 15px;
+    /* Add some padding to the sides */
+    letter-spacing: 0.5px;
+    /* Slightly increase letter spacing for a more polished look */
+    text-shadow: 0px 1px 3px rgba(0, 0, 0, 0.1);
+    /* Subtle shadow for better text readability */
+    transition: all 0.3s ease-in-out;
+    /* Smooth transition for hover effect */
+}
+
+/* Add a hover effect to slightly change the style */
+#about p:hover {
+    color: #ddd;
+    /* Change color on hover for interactivity */
+    font-style: normal;
+    /* Remove italics on hover for a dynamic effect */
+    text-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+    /* Enhance shadow on hover */
+}
+/* Social Links Container */
+.social-links {
+    margin-top: 20px;
+}
+
+/* Social Icons */
+.social-icon {
+    display: inline-block;
+    margin: 10px 15px;
+    padding: 10px 20px;
+    background-color: #008c41;
+    color: white;
+    font-size: 16px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.social-icon:hover {
+    background-color: #006d2c;
+}
+
+/* LinkedIn Icon Color */
+.social-icon.linkedin {
+    background-color: #0077b5;
+}
+
+.social-icon.linkedin:hover {
+    background-color: #005b8c;
+}
+
+/* GitHub Icon Color */
+.social-icon.github {
+    background-color: #333;
+}
+
+.social-icon.github:hover {
+    background-color: #222;
+}
+
+/* LeetCode Icon Color */
+.social-icon.leetcode {
+    background-color: #f2a900;
+}
+
+.social-icon.leetcode:hover {
+    background-color: #d48800;
+}
+
+
+
+
+/* Languages Section */
+/* Languages Section */
+.languages-container {
+    margin-top: 30px;
+    text-align: center;
+    padding: 20px;
+}
+
+.languages-container h3 {
+    font-size: 1.6rem;
+    color: #222;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+.circle-bars {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+/* Circle Container */
+.circle {
+    width: 100px;
+    height: 100px;
+    position: relative;
+    margin: 0 10px;
+    text-align: center;
+}
+
+.circle h4 {
+    margin-top: 10px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #ddd;
+    font-style: italic;
+}
+
+/* Circular Progress Styling */
+.percent {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    position: relative;
+}
+
+.percent svg {
+    width: 120px;
+    height: 120px;
+    transform: rotate(-90deg);
+}
+
+.percent circle {
+    width: 100%;
+    height: 100%;
+    fill: none;
+    stroke-width: 10;
+    stroke-linecap: round;
+}
+
+.percent circle:nth-child(1) {
+    stroke: #ddd;
+}
+
+.percent circle:nth-child(2) {
+    stroke: #b30059;
+    stroke-dasharray: 314;
+    /* Circumference of the circle */
+    stroke-dashoffset: 314;
+    /* Start hidden */
+    transition: stroke-dashoffset 1s linear;
+}
+/* Animations */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: scale(0.8);
+    }
+
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+@keyframes drawCircle {
+    0% {
+        stroke-dashoffset: 314;
+    }
+
+    100% {
+        stroke-dashoffset: var(--dashoffset);
+    }
+}
+
+@keyframes animateStroke {
+    0% {
+        stroke-dashoffset: 314;
+    }
+
+    100% {
+        stroke-dashoffset: var(--dashoffset);
+    }
+}
+
+@keyframes fadeInNumber {
+    0% {
+        opacity: 0;
+        transform: scale(0.8);
+    }
+
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+/* Percentage Number */
+.number {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+/* On Load Animation */
+.circle[data-percent="100"] circle:nth-child(2) {
+    stroke-dashoffset: 0;
+}
+
+.circle[data-percent="75"] circle:nth-child(2) {
+    stroke-dashoffset: 78.5;
+    /* 25% of 314 */
+}
+
+.circle[data-percent="50"] circle:nth-child(2) {
+    stroke-dashoffset: 157;
+}
+
+.circle[data-percent="25"] circle:nth-child(2) {
+    stroke-dashoffset: 235.5;
+}
+
+
+
+
+
+
+/* Contact Info Section */
+.contact-info {
+    margin-top: 30px;
+    text-align: center;
+    /* Center the contact info */
+   
+}
+
+/* Contact Item */
+.contact-item {
+    font-size: 1.2rem;
+    color: #333;
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    /* Space between icon and text */
+    transition: all 0.3s ease;
+}
+
+/* Contact Icon */
+.contact-icon {
+    font-size: 1.8rem;
+    /* Larger icon size */
+    color: #ff66cc;
+    /* Color for the icon */
+}
+
+/* Contact Link */
+.contact-link {
+    color: gray;
+    font-weight: 500;
+    text-decoration: none;
+    font-size: 1.2rem;
+    transition: color 0.3s ease;
+}
+
+/* Hover Effects */
+.contact-item:hover .contact-link {
+    color: #b30059;
+    /* Color change on hover */
+}
+
+.contact-item:hover .contact-icon {
+    color: #b30059;
+    /* Icon color change on hover */
+}
+
+/* Responsive Design: Make sure it looks good on smaller screens */
+@media (max-width: 768px) {
+    .contact-info {
+        padding: 0 15px;
+    }
+}
+
+
+
+
+
+
+
+
+
+/* Resume Link Container */
+.resume-link {
+    margin-top: 20px;
+    text-align: center;
+    /* Center the resume button */
+}
+
+/* Resume Button Styling */
+.btn-resume {
+    display: inline-block;
+    background: linear-gradient(to right, #b30059, #ff66cc);
+    color: #fff;
+    font-size: 1.2rem;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 25px;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    animation: slideIn 1s ease-in-out, glowEffect 2s infinite alternate;
+}
+
+/* Icon in Resume Button */
+.btn-resume span {
+    font-size: 1.5rem;
+    margin-right: 10px;
+    /* Add space between the icon and text */
+}
+
+/* Hover Effects */
+.btn-resume:hover {
+    background: linear-gradient(to right, #ff66cc, #b30059);
+    /* Reverse gradient */
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2);
+    transform: scale(1.05);
+    /* Slightly enlarge button */
+}
+
+/* Responsive Design: Ensure good appearance on smaller screens */
+@media (max-width: 768px) {
+    .btn-resume {
+        font-size: 1rem;
+        padding: 8px 15px;
+    }
+}
+
+/* Animations */
+/* Slide in from bottom */
+@keyframes slideIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Glow effect */
+@keyframes glowEffect {
+    0% {
+        box-shadow: 0 0 10px rgba(179, 0, 89, 0.6), 0 0 20px rgba(255, 102, 204, 0.4);
+    }
+
+    100% {
+        box-shadow: 0 0 20px rgba(179, 0, 89, 0.8), 0 0 30px rgba(255, 102, 204, 0.6);
+    }
+}
+
+
+
+
+
+
+
+
+/* Contact Section */
+.contact {
+    background-color: #000000;
+    /* Black background */
+    padding: 50px 20px;
+    text-align: center;
+    animation: slideUp 2s ease-in-out;
+    
+}
+
+.contact h2 {
+    margin-bottom: 1.5rem;
+    color: #fff;
+    /* White text */
+}
+
+.contact form {
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+.contact form input,
+.contact form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #444;
+    /* Dark border */
+    border-radius: 5px;
+    font-size: 1rem;
+    color: #fff;
+    background-color: #333;
+    /* Dark background for form fields */
+}
+
+.contact form button {
+    background-color: #b30059;
+    /* Darker pink */
+    color: #fff;
+    padding: 0.75rem 1.5rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s;
+}
+
+.contact form button:hover {
+    background-color: #99004d;
+    /* Darker pink */
+}
+
+.hero-content {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    text-align: left;
+}
+
+.profile-pic {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid #333;
+}
+
+.profile-pic:hover {
+    transform: scale(1.1);
+}
+
+.about p {
+    max-width: 600px;
+    font-size: 1rem;
+    line-height: 1.5;
+    text-align: justify;
+}
+
+/* Footer */
+footer {
+    background-color: #b30059;
+    /* Darker pink footer */
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+    animation: fadeIn 1.5s ease-in-out;
+}
+
+footer p {
+    margin: 0;
+    font-size: 0.9rem;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes slideUp {
+    from {
+        transform: translateY(20px);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}

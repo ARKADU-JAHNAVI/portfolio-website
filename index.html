@@ -6,7 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio Website</title>
     <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap">
+">
 </head>
 
 <body>
@@ -17,20 +18,51 @@
                 <ul class="nav-links">
                     <li><a href="#home">Home</a></li>
                     <li><a href="#projects">Projects</a></li>
+                    <li><a href="#skills">Skills</a></li>
                     <li><a href="#about">About</a></li>
                     <li><a href="#contact">Contact</a></li>
+                    
+                    
                 </ul>
             </div>
         </nav>
     </header>
-
     <section id="home" class="hero">
-        <div class="container">
-            <h2>Hi, I'm Arkadu Jahnavi</h2>
-            <p>Creative Software Developer | Machine Learning Enthusiast</p>
-            <a href="#projects" class="btn">View My Work</a>
+    <div class="container">
+        <div class="hero-content">
+            <img src="profile-pic.jpg" alt="Profile Picture of Arkadu Jahnavi" class="profile-pic">
+            <div class="hero-text">
+                <h2>Hi, I'm Arkadu Jahnavi</h2>
+                <p>Creative Software Developer | Machine Learning Enthusiast</p>
+                <a href="#projects" class="btn">View My Work</a>
+            </div>
+        </div>
+    </div>
+     </section>
+
+    <section class="education">
+        <div class="education-container">
+            <div class="education-details">
+            <h2>Education</h2>
+            <ul>
+                <li>
+                    <strong>B-Tech, CSE</strong>, VIT-AP University, Amaravati, Andhra Pradesh (2021 - 2025) | 8.26 CGPA
+                </li>
+                <li>
+                    <strong>12th Standard</strong>, Narayana Junior College, Nellore, Andhra Pradesh (2021) | 97.3%
+                </li>
+                <li>
+                    <strong>10th Standard</strong>, Sri Chaitanya Techno School, Srikalahasti, Andhra Pradesh (2019) | 9.8
+                    CGPA
+                </li>
+            </ul>
+            <div class="education-image">
+                <img src="icon1.png" alt="Education Image">
+            </div>
         </div>
     </section>
+
+
 
     <section id="projects" class="projects">
         <div class="container">
@@ -39,55 +71,187 @@
                 <div class="project-card">
                     <h3>Tesla Stock Price Prediction</h3>
                     <p>A deep learning project using LSTM to predict Tesla's stock prices.</p>
-                    <a href="#" class="btn">Live Demo</a>
-                    <a href="#" class="btn">GitHub</a>
+                    <a href="https://github.com/ARKADU-JAHNAVI/Tesla-stock-price-prediction.git" class="btn">GitHub</a>
                 </div>
                 <div class="project-card">
-                    <h3>Plant Disease Detection</h3>
-                    <p>Detecting plant diseases using the EfficientNetB0 model for agricultural benefits.</p>
-                    <a href="#" class="btn">Live Demo</a>
-                    <a href="#" class="btn">GitHub</a>
+                    <h3>Spotify Clone</h3>
+                    <p>A web-based Spotify clone built using React.js and Node.js, complete with music streaming and
+                        playlists.</p>
+                    <a href="https://github.com/ARKADU-JAHNAVI/Spotify-Clone.git" class="btn">GitHub</a>
                 </div>
                 <div class="project-card">
-                    <h3>Fake News Detection</h3>
-                    <p>A hybrid approach using BiLSTM-CNN and BERT to classify news as fake or real.</p>
-                    <a href="#" class="btn">Live Demo</a>
-                    <a href="#" class="btn">GitHub</a>
-                </div>
-                <div class="project-card">
-                    <h3>Weather Monitoring System</h3>
-                    <p>An IoT-based system using Arduino to monitor and display weather conditions.</p>
-                    <a href="#" class="btn">Live Demo</a>
-                    <a href="#" class="btn">GitHub</a>
+                    <h3>Movie Recommendation System</h3>
+                    <p>A machine learning-based system that recommends movies based on user preferences and collaborative
+                        filtering.</p>
+                    <a href="https://github.com/ARKADU-JAHNAVI/Movie-recommendation-System.git" class="btn">GitHub</a>
                 </div>
                 <div class="project-card">
                     <h3>Bangalore House Price Prediction</h3>
                     <p>Predicting house prices in Bangalore using machine learning models.</p>
-                    <a href="#" class="btn">Live Demo</a>
-                    <a href="#" class="btn">GitHub</a>
+                    <a href="https://github.com/ARKADU-JAHNAVI/Bangalore-House-Price-Prediction.git" class="btn">GitHub</a>
                 </div>
                 <div class="project-card">
                     <h3>Facial Emotion Recognition</h3>
                     <p>Using CNN to identify emotions from facial expressions.</p>
-                    <a href="#" class="btn">Live Demo</a>
-                    <a href="#" class="btn">GitHub</a>
+                    <a href="https://github.com/ARKADU-JAHNAVI/Face-Detection.git" class="btn">GitHub</a>
+                </div>
+                <div class="project-card">
+                    <h3>Portfolio</h3>
+                    <p>Showcasing my expertise and this portfolio highlights my journey, accomplishments, and creative
+                    projects.</p>
+                    <a href="https://github.com/ARKADU-JAHNAVI/portfolio-website" class="btn">GitHub</a>
                 </div>
             </div>
         </div>
     </section>
 
-    <section id="about" class="about">
-        <div class="container">
-            <h2>About Me</h2>
-            <p>I am a passionate software developer with expertise in machine learning, full-stack web development, and
-                data science.</p>
+    <section id="skills" class="skills">
+        <div class="container skills-container">
+            <h2 class="skills-heading">Technical Skills</h2>
+            <div class="skill-bars">
+                <div class="skill-bar">
+                    <div class="skill-title">HTML & CSS</div>
+                    <div class="skill-progress" data-skill="90%">HTML & CSS</div>
+                   
+                </div>
+                <div class="skill-bar">
+                    <div class="skill-title">Java</div>
+                    <div class="skill-progress" data-skill="85%">Java</div>
+                    
+                </div>
+                <div class="skill-bar">
+                    <div class="skill-title">JavaScript</div>
+                    <div class="skill-progress" data-skill="80%">JavaScript</div>
+                </div>
+                <div class="skill-bar">
+                    <div class="skill-title">Python</div>
+                    <div class="skill-progress" data-skill="85%">Python</div>
+                </div>
+                <div class="skill-bar">
+                    <div class="skill-title">SQL</div>
+                    <div class="skill-progress" data-skill="75%">SQL</div>
+                </div>
+            </div>
+        </div>
+        <!-- Technical Skills Image (placed outside the container) -->
+        <div class="technical-skills-image">
+            <img src="icon3-modified.png" alt="Technical Skills Icon">
         </div>
     </section>
+
+
+
+
+
+    <section id="about" class="about">
+        <div class="container about-container">
+            <h2>About Me</h2>
+            <p>
+                I am a passionate B.Tech CSE student from VIT AP. I specialize in software development,
+                with a focus on full-stack web development, machine learning, and AI. I love solving problems and working
+                on innovative projects.
+            </p>
+            <!-- Social Media Links -->
+            <div class="social-links">
+                <a href="https://www.linkedin.com/in/arkadu-jahnavi-31819a291/" target="_blank"
+                    class="social-icon linkedin">
+                    LinkedIn
+                </a>
+                <a href="https://github.com/ARKADU-JAHNAVI" target="_blank" class="social-icon github">
+                    GitHub
+                </a>
+                <a href="https://leetcode.com/u/Janu121/" target="_blank" class="social-icon leetcode">
+                    LeetCode
+                </a>
+                <div class="resume-link">
+                    <a href="https://drive.google.com/file/d/1XjOOc9fnd2D8C49WCdU3Ug9vSiSUFXbb/view?usp=sharing" target="_blank" class="btn-resume">
+                        <span>&#128196;</span> View My Resume
+                    </a>
+                </div>
+                <div id="languages" class="languages-container">
+                    <h3>Languages</h3>
+                    <div class="circle-bars">
+                        <div class="circle">
+                            <div class="percent" data-percent="85">
+                                <div class="dot"></div>
+                                <svg>
+                                    <circle cx="60" cy="60" r="50"></circle>
+                                    <circle cx="60" cy="60" r="50"></circle>
+                                </svg>
+                                <div class="number">
+                                    <h4>English</h4>
+                                </div>
+                            </div>
+                            
+                        </div>
+                        <div class="circle">
+                            <div class="percent" data-percent="95">
+                                <div class="dot"></div>
+                                <svg>
+                                    <circle cx="60" cy="60" r="50"></circle>
+                                    <circle cx="60" cy="60" r="50"></circle>
+                                </svg>
+                                <div class="number">
+                                    <h4>Telugu</h4>
+                                </div>
+                            </div>
+                            
+                        </div>
+                        <div class="circle">
+                            <div class="percent" data-percent="50">
+                                <div class="dot"></div>
+                                <svg>
+                                    <circle cx="60" cy="60" r="50"></circle>
+                                    <circle cx="60" cy="60" r="50"></circle>
+                                </svg>
+                                <div class="number">
+                                    <h4>French</h4>
+                                </div>
+                            </div>
+                            
+                        </div>
+                        <div class="circle">
+                            <div class="percent" data-percent="75">
+                                <div class="dot"></div>
+                                <svg>
+                                    <circle cx="60" cy="60" r="50"></circle>
+                                    <circle cx="60" cy="60" r="50"></circle>
+                                </svg>
+                                <div class="number">
+                                    <h4>Hindi</h4>
+                                </div>
+                            
+                        </div>
+                    </div>
+                </div>
+                </div>
+                </section>
+            </div>
+        </div>
+    </section>
+
+
+
+    <section>
+    <div class="contact-info">
+        <div class="contact-item">
+            <span class="contact-icon">&#9993;</span> <!-- Envelope icon for email -->
+            <a href="mailto:arkadujahnavi@gmail.com" class="contact-link">arkadujahnavi@gmail.com</a>
+        </div>
+        <div class="contact-item">
+            <span class="contact-icon">&#128241;</span> <!-- Mobile phone icon -->
+            <a href="tel:+919440663476" class="contact-link">+91 94406 63476</a>
+        </div>
+        
+    </div>
+    </div>
+    </section>
+
 
     <section id="contact" class="contact">
         <div class="container">
             <h2>Contact Me</h2>
-            <form action="https://formspree.io/f/mnqlpqqp" method="POST">
+            <form action="https://formspree.io/f/mwpporgq" method="POST">
                 <input type="text" name="name" placeholder="Your Name" required>
                 <input type="email" name="email" placeholder="Your Email" required>
                 <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
@@ -101,8 +265,7 @@
             <p>&copy; 2024 Arkadu Jahnavi. All rights reserved.</p>
         </div>
     </footer>
-
-    <script src="script.js"></script>
+<script src="script.js" defer></script>
 </body>
 
 </html>
